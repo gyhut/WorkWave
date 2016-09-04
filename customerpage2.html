@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page 2 | Wavity</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link  rel="stylesheet" href="Style.css"/>
+    <link rel="stylesheet" href="avenir-lt-std/AvenirLTStd-Light.woff"/>
+    <link rel="stylesheet" href="avenir-lt-std/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/titatoggle/1.2.9/titatoggle-dist-min.css" />
+</head>
+<body class="container-fluid">
+<div class="header">
+    <div class="header-image"><img src="Images/wavity_logo_header.png"/></div>
+    <div><img src="Images/userimage.jpg " class="header-user img-circle pull-right"/></div>
+    <div class="header-search pull-right"><img src="Images/search_blue.png"/></div>
+</div>
+<div class="body-elements row col-lg-12 col-xs-12 col-sm-12 col-md-12 ">
+    <nav class="nav navbar-nav nav-stacked pull-left">
+        <ul>
+            <li class="active"><img src="Images/users_grey.png"/><a class="navli ">CUSTOMERS</a></li>
+            <li ><img src="Images/service_catalog_grey.png"/><a class="navli ">SERVICE CATALOGS</a></li>
+            <li ><img src="Images/reports_grey.png"/><a class="navli ">REPORTS</a></li>
+            <li><img src="Images/elements_grey.png"/><a class="navli">ELEMENTS</a></li>
+            <li><img src="Images/settings_grey.png"/><a class="navli ">SETTINGS</a></li>
+            <li ><img src="Images/notification-grey.png"/><a class="navli ">MESSAGES</a></li>
+        </ul>
+        <div class="navlogo">
+            <img src="Images/wavity_stacked.png" />
+        </div>
+    </nav>
+    <div class="element_body col-lg-11 col-md-11 col-sm-10  col-xs-10 pull-left">
+        <div class="element_header col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+            <div class="eleheaderimg"><img src="Images/users_grey.png" class="img-responsive"/>
+                <h2 class="col-lg-2">Customers</h2>
+            </div>
+            <!--<div class="eleheaderimg1"><img src="Images/save-grey.png" class="img-responsive pull-right"/></div>-->
+            <!--<div class="eleheaderimg1"><img src="Images/close-remove-grey.png " class=" img-responsive pull-right"/></div>-->
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <p>The customers below are associated with all Cloud Apps. Any change will cause a change in access permissions for the user in all Cloud Apps</p></div>
+        <div class="form-group modal-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="searchcustomer col-sm-5 col-lg-3 col-xs-8 col-md-5">
+              <input id="searchcustomer" class="form-control" type="text" placeholder="Search Customers"/>
+              <span><img src="Images/search_blue.png"/></span>
+          </div>
+            <div class="filtersearch col-sm-6 col-lg-3 col-xs-8 col-md-4 pull-right">
+                <input id="filterby" class="form-control"  type="text" placeholder="Filter By" />
+                <span><img src="Images/menu-arrow-grey.png" /></span>
+
+            </div>
+            </div>
+        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="panel custpanel-new col-lg-3 col-md-5 col-sm-6 col-xs-8">
+                <div class="panel-heading col-md-12 col-lg-12 col-xs-12 col-sm-12">
+                    <h3 class="elements1h3 col-md-9 col-lg-9 col-xs-9 col-sm-9">New Customer</h3>
+                    <img src="Images/threedots_more_grey.png" class="elementsimg img-responsive pull-right" />
+                </div>
+
+                <div class="panel-body col-md-12 col-lg-12 col-xs-12 col-sm-12">
+                    <img src="Images/grey-plus-icon.png" alt="plus icon" class="img-responsive" data-toggle="modal" data-target="#modalopen"/>
+                    <div class="modal  col-lg-12 col-md-12 col-sm-10 col-xs-offset-1 col-xs-10" id="modalopen" >
+                        <div class="modal-dialog ">
+
+                            <div class="modal-content col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="modal-header col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="modal-title col-lg-12 col-md-12 col-sm-11 col-xs-11">
+                                        <div class="eleheaderimg"><img src="Images/users_grey.png" class="img-responsive"/>
+                                            <h2 class="col-xs-8 col-lg-8 col-md-8 col-sm-8">Add Customer</h2>
+                                        </div>
+                                        <div class="eleheaderimg1" data-dismiss="modal">
+                                            <img src="Images/close-remove-grey.png " class=" img-responsive pull-right"/></div>
+                                    </div>
+                                </div>
+                                <div class="model-body customermodelbtn  col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="customermodel col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <label>Success!!</label></div>
+                                    <div class=" col-lg-offset-2 col-lg-5 col-md-6 col-sm-6 col-xs-10 ">
+                                        <button class="btn btn-info  btn-md">ADD ELEMENTS</button></div>
+                                    <div class="customermodelbtn col-lg-6 col-md-6 col-sm-6 col-xs-10 pull-left">
+                                        <button class="btn btn-md btn-info">SET UP MESSAGES</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-new col-md-12 col-lg-12 col-xs-12 col-sm-12">
+
+                </div>
+            </div>
+            <div class="panel panelcatalog col-lg-3 col-md-5 col-sm-6 col-xs-6">
+                <div class="panel-heading col-md-12 col-lg-12 col-xs-12 col-sm-12">
+                    <h3 class="elements1h3">ACME Products</h3>
+                    <img src="Images/threedots_more_grey.png" alt="threedots" class="elementsimg img-responsive pull-right" />
+                </div>
+                <div class="panel-body col-md-12 col-lg-12 col-xs-12 col-sm-12">
+
+                    <label>Buyer:John Smith</label>
+                    <label>Number of Users:45</label>
+                </div>
+                <div class="panel-footer col-md-12 col-lg-12 col-xs-12 col-sm-12">
+                    <label>Enabled</label>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <div class="slider round"></div>
+                    </label>
+                </div>
+            </div>
+            <div class="panel panelcatalog col-lg-3 col-md-5 col-sm-6 col-xs-6">
+                <div class="panel-heading col-md-12 col-lg-12 col-xs-12 col-sm-12">
+                    <h3 class="elements1h3">Oz Crop</h3>
+                    <img src="Images/threedots_more_grey.png" class="elementsimg img-responsive pull-right" />
+                </div>
+                <div class="panel-body col-md-12 col-lg-12 col-xs-12 col-sm-12">
+                    <label>Buyer:John Smith</label>
+                    <label>Number of Users:45</label>
+                </div>
+                <div class="panel-footer col-md-12 col-lg-12 col-xs-12 col-sm-12">
+                    <label>Enabled</label>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <div class="slider round"></div>
+                    </label>
+                </div>
+                <span><img src="Images/caution.png"/></span>
+            </div>
+            <div class="panel panelcatalog col-lg-3 col-md-5 col-sm-6 col-xs-6">
+                <div class="panel-heading col-md-12 col-lg-12 col-xs-12 col-sm-12">
+                    <h3 class="elements1h3">Stark</h3>
+                    <img src="Images/threedots_more_grey.png" class="elementsimg img-responsive pull-right" />
+                </div>
+                <div class="panel-body col-md-12 col-lg-12 col-xs-12 col-sm-12">
+                    <label>Buyer:John Smith</label>
+                    <label>Number of Users:45</label>
+                </div>
+                <div class="panel-footer  col-md-12 col-lg-12 col-xs-12 col-sm-12">
+                    <label>Enabled</label>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <div class="slider round"></div>
+                    </label>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+            <div class="panel panelcatalog col-lg-3 col-md-5 col-sm-6 col-xs-6">
+                <div class="panel-heading col-md-12 col-lg-12 col-xs-12 col-sm-12">
+                    <h3 class="elements1h3">Daily Planet</h3>
+                    <img src="Images/threedots_more_grey.png" alt="threedots" class="elementsimg img-responsive pull-right" />
+                </div>
+                <div class="panel-body col-md-12 col-lg-12 col-xs-12 col-sm-12">
+                    <label>Buyer:John Smith</label>
+                    <label>Number of Users:45</label>
+                </div>
+                <div class="panel-footer col-md-12 col-lg-12 col-xs-12 col-sm-12">
+                    <label>Enabled</label>
+                    <label class="switch">
+                        <input type="checkbox" disabled>
+                        <div class="slider round"></div>
+                    </label>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-6">&nbsp;</div>
+    <div class="col-xs-6">&nbsp;</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+</body>
+</html>
